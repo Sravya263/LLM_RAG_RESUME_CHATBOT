@@ -1,48 +1,55 @@
-
 # 🧠 Resume RAG Chatbot
 
-A simple LLM + Retrieval-Augmented Generation (RAG) project built using:
+A simple **LLM + Retrieval-Augmented Generation (RAG)** application that lets you **chat with your resume**.  
+Upload a PDF resume, ask questions, and get accurate, grounded answers using vector search and LLMs.
 
+Built with:
 - LangChain
 - OpenAI
 - FAISS
 - Streamlit
 
+---
+
+## ✨ Features
+
+- 📄 Upload your resume (PDF)
+- ✂️ Automatically splits the document into chunks
+- 🧠 Generates embeddings for each chunk
+- 🗂️ Stores embeddings in FAISS vector database
+- 🔍 Retrieves relevant chunks for each question
+- 💬 LLM generates context-aware, grounded answers
+- ⚡ Simple UI with Streamlit
+
+---
+
 ## 🚀 How It Works
 
 1. Upload your resume (PDF)
-2. The document is split into chunks
-3. Chunks are converted into embeddings
-4. Stored in FAISS vector database
-5. User question retrieves relevant chunks
-6. LLM generates grounded answer
+2. The document is split into smaller chunks
+3. Each chunk is converted into embeddings
+4. Embeddings are stored in FAISS
+5. User question retrieves the most relevant chunks
+6. The LLM uses those chunks to generate the final answer
 
-## 🔧 Setup
+---
 
-### 1. Install dependencies
+## 🛠️ Tech Stack
 
+- **LangChain** – RAG pipeline orchestration  
+- **OpenAI** – Embeddings + LLM  
+- **FAISS** – Vector database for similarity search  
+- **Streamlit** – Web UI  
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+-git clone https://github.com/your-username/resume-rag-chatbot.git
+cd resume-rag-chatbot
 pip install -r requirements.txt
-
-### 2. Create .env file
-
-Create a file named `.env` and add:
-
-OPENAI_API_KEY=your_openai_api_key_here
-
-### 3. Run the app
-
+Run the app using command
 streamlit run app.py
-
----
-
-## 📌 Example Questions
-
-- What technologies do I know?
-- What cloud platforms have I used?
-- What projects are mentioned?
-- What is my education background?
-
----
-
-Built for learning LLM + RAG fundamentals 🚀
-# chatbot-using-LLMs-Hugging-face
