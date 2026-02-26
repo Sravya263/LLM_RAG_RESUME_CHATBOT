@@ -12,7 +12,6 @@ import os
 
 st.set_page_config(page_title="Resume RAG Chatbot", layout="wide")
 st.title("Ask My Resume - LLMs & HuggingFace with Chat Memory")
-
 # Upload resume
 uploaded_file = st.file_uploader("Upload your resume (PDF)", type=["pdf"])
 
